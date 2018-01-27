@@ -13,6 +13,7 @@ import { MyApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ProdutoService } from "../services/domain/produto.service";
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ErrorInterceptorProvider,
     AuthService,
     StorageService,
-    CLienteService    
+    CLienteService,
+    ProdutoService   
   ]
 })
 export class AppModule {}
