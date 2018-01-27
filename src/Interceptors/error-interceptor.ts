@@ -42,7 +42,7 @@ export class ErrorInterceptor implements HttpInterceptor {
                 case 404: 
                  this.handle404();
                  break;
-                 
+                                  
 
                 default:
                  this.handleDefaultError(errorObj);
