@@ -44,7 +44,7 @@ export class CartPage {
      this.items = this.cartService.removeProduto(produto).items;
    }
 
-   increaseQuantity(produto: ProdutoDTO){
+   increaseQuantity(produto: ProdutoDTO) {
      this.items = this.cartService.increaseQuantity(produto).items;
    }
 
@@ -56,7 +56,11 @@ export class CartPage {
       return this.cartService.total();
    }
   
-   goOn(){
+   goOn() {
      this.navCtrl.setRoot('CategoriasPage');
+   }
+
+   checkout() {
+     this.navCtrl.push('PickAddressPage');
    }
 }
