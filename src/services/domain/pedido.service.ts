@@ -1,6 +1,6 @@
 import { PedidoDTO } from './../../models/pedido.dto';
 import { API_CONFIG } from './../../config/api.config';
-import { HttpClient} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from "@angular/core";
 
 
@@ -18,7 +18,7 @@ export class PedidoService {
                 observe: 'response',
                 responseType: 'text'
             }
-        
+
         );
     }
 }
